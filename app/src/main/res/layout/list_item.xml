@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/iv"
+        android:layout_centerVertical="true">
+        <TextView
+            android:id="@+id/Song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Song"
+            android:textSize="25sp"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/Singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Singer"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/Song"
+            android:textColor="#FF8F33" />
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:layout_below="@+id/Song"
+            android:layout_toRightOf="@+id/Singer"
+            android:textColor="#FF8F03"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+
+</RelativeLayout>
